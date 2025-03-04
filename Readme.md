@@ -9,10 +9,16 @@
 <h3 align="center">
 	<a href="#%EF%B8%8F-installation">Installation</a>
 	<span> · </span>
-	<a href="#-running-fast-api-program">Running the Program</a>
+	<a href="#-running-app">Running the server</a>
 	<span> · </span>
 	<a href="#-setup">Setup</a>
 </h3>
+
+<li>
+  <strong>Links</strong>:
+  <a href="#-dependencies">Dependencies</a>
+  <a href="#-docker">Docker</a>
+</li>
 
 ---
 
@@ -42,11 +48,24 @@
     pip install -r requirements.txt
     ```
 
-## 🚀 Running Fast-Api App
+## 🚀 Running App
 
 ```sh
 uvicorn main:app --reload --port 3000
 ```
+
+<h2 id="-dependencies"> 🔗 Dependencies</h2>
+<h3> adminer</h3>
+<h3> sqlalchemy</h3>
+<h3> alembic</h3>
+
+<h2 id="-docker"> 🐳 Docker</h2>
+<h3> Start services</h3>
+
+```sh
+docker-compose up --build --force-recreate -d
+```
+
 
 ## 📝 Setup
 > Explanation and details about how the setup works.
